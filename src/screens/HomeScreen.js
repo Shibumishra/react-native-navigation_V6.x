@@ -93,6 +93,11 @@ const HomeScreen = ({ navigation }) => {
               photo={item.poster}
               subtitle={item.subtitle}
               isFree={item.isFree}
+              onPress={() => navigation.navigate('GameDetails', {
+                title: item.title,
+                id: item.id,
+              })
+              }
             />
           ))}
         {gamesTab == 2 &&
@@ -104,6 +109,11 @@ const HomeScreen = ({ navigation }) => {
               subtitle={item.subtitle}
               isFree={item.isFree}
               price={item.price}
+              onPress={() => navigation.navigate('GameDetails', {
+                title: item.title,
+                id: item.id,
+              })
+              }
             />
           ))}
       </ScrollView>
