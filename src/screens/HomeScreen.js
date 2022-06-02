@@ -35,7 +35,7 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView style={{ padding: 20 }}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20, }}>
           <Text style={{ fontSize: 16, fontFamily: 'Roboto-Medium', fontWeight: 'bold' }}>Hello, John Doe</Text>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
+          <TouchableOpacity onPress={() => navigation.openDrawer()}>
             <ImageBackground
               source={require('../assets/images/user-profile.jpg')}
               style={{ width: 35, height: 35 }}
@@ -47,7 +47,7 @@ const HomeScreen = ({ navigation }) => {
         <View style={{
           flexDirection: 'row',
           borderColor: '#C6C6C6',
-          borderWidth: 1,
+          borderWidth: 2,
           borderRadius: 9,
           paddingHorizontal: 5,
           paddingVertical: 5,
@@ -56,7 +56,7 @@ const HomeScreen = ({ navigation }) => {
             name="search"
             size={20}
             color="#C6C6C6"
-            style={{ marginRight: 5, marginTop: 10 }}
+            style={{ marginRight: 5, marginTop: 12 }}
           />
           <TextInput placeholder='Search' />
         </View>

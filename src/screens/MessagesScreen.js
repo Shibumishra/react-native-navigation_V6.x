@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const LoginScreen = () => {
+const MessagesScreen = () => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>LoginScreen</Text>
+      <Text>MessagesScreen</Text>
     </View>
   )
 }
 
-export default LoginScreen
+export default MessagesScreen;

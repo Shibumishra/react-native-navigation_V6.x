@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import { SafeAreaView, StyleSheet, StatusBar, Text, useColorScheme, View, TouchableOpacity } from 'react-native';
+import { StatusBar, useColorScheme, View } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import Router from './src/route';
 
